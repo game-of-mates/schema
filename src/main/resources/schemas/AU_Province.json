@@ -1,4 +1,4 @@
-  AU_Province:
+AU_Province:
       type: object
       description: An ISO-3166-2 Recognised Province of Country AU (Australia)
       properties:

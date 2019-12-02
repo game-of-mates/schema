@@ -1,0 +1,29 @@
+PostalAddress:
+   type: object
+   description: Physical address of a building that can receive mail correspondence.
+   properties:
+     addressLocality:
+       type: string
+       description:  "The locality in which the street address is, and which is in the region. For example, the suburb or town."
+       example: "Pyrmont"
+     addressRegion:
+       type: string
+       description:  "The region in which the locality is, and which is in the country. For example, California or another appropriate first-level Administrative division. For an Australian address this should be a State, Territory or registered province."
+       example: "NSW"
+     postalCode:
+       type: string
+       description:  "The postal code. For example, 2009"
+       example: "2009"
+     postOfficeBoxNumber:
+       type: string
+       description: The post office box number for PO box addresses.
+       example: "PO Box 223"
+     streetAddress:
+       type: string
+       description: The street address, including Unit, floor, level.
+       example: "8/80 John Street"
+     countryCode:
+       type: string
+       description: The two-letter ISO 3166-1 alpha-2 country code.
+       pattern: '[A-Z]{1,3}''
+       example: 'AU'

@@ -1,0 +1,58 @@
+Person:
+      type: object
+      description: A Person who is linked or relevant to the 'Game of Mates' data set. 
+      properties:
+          id: 
+            type: string 
+            description: "URN identifier of the game of mates Person - typically strip whitespace, special chars and convert to lowercase."
+            pattern: 'urn\:gameofmates.au\:person\:[A-Z,a-z]*'
+            example: 'urn:gameofmates.au:person:joebloggs'
+          name:
+            type: string
+            description:  "Name Of Person"
+            example: "Joe Bloggs"
+          familyName:
+            type: string
+            description:  "Family name. In Anglo cultures, the last name of an Person. This can be used along with givenName instead of the name property."
+            example: "Bloggs"
+          givenName:
+            type: string
+            description:  "Given name. In Anglo cultures, the first name of a Person. This can be used along with familyName instead of the name property."
+            example: "Joe"         
+          additionalName:
+            type: string
+            description: An additional name for a Person, can be used for a middle name.
+            example: 'Barnaby'
+          birthDate:
+            type: string
+            description: Date of birth.
+            format: date
+            example: '1984-06-22'
+          birthPlace:
+            $ref: PostalAddress
+            description: Birth place of location  
+          deathDate:
+            type: string
+            description: Date of death.
+            format: date
+            example: '1984-06-22'
+          deathPlace:
+            $ref: PostalAddress
+            description: Place of death.
+          gender:
+            type: string
+            description: The gender of the person
+            enum:
+             - 'male'
+             - 'female'
+             - 'intersex'
+          email:
+            type: string
+            description: Email address.
+          twitterName:
+            type: string
+            description: The persons Twitter name.
+            example: "@JoshFrydenberg"
+          mediawiki:
+            type: string
+            description: The URI to the person's mediawiki page.

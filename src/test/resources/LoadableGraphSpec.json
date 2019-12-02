@@ -1,0 +1,68 @@
+[{
+  "id": "country",
+  "urn_prefix": "urn:iso:std:iso:3166:",
+  "relative_load_priority": 1,
+  "label": "country",
+  "data_location": "/locations/iso-3166-countries.csv",
+  "data_format": "text/csv",
+  "temporal": true,
+  "schema_ref": "./schemas/Country.json",
+  "source" : "https://en.wikipedia.org/wiki/ISO_3166-1"
+},
+{
+  "id": "provinces",
+  "urn_prefix": "urn:iso:std:iso:3166:-2:",
+  "relative_load_priority": 2,
+  "label": "province",
+  "data_location": "/locations/iso-3166-2-provinces.csv",
+  "data_format": "text/csv",
+  "temporal": true,
+  "schema_ref": "./schemas/AU_Province.json",
+  "source" : "https://en.wikipedia.org/wiki/ISO_3166-2:AU"
+},
+{
+  "id": "au_electoral_division",
+  "urn_prefix": "urn:aec.gov.au:division:",
+  "relative_load_priority": 3,
+  "label": "electoral_division",
+  "data_location": "/parliament/AU-electorates.csv",
+  "data_format": "text/csv",
+  "temporal": false,
+  "schema_ref": "./schemas/AU_ElectoralDivision.json",
+  "source" :"https://www.aec.gov.au/profiles/index.htm"
+},
+{
+  "id": "au_parliament",
+  "urn_prefix": "urn:aph.gov.au:parliament:",
+  "relative_load_priority": 4,
+  "label": "au_parliament",
+  "data_location": "/parliament/au-parliaments.csv",
+  "data_format": "text/csv",
+  "temporal": true,
+  "schema_ref": "./schemas/Parliament.json",
+  "source": "https://en.wikipedia.org/wiki/Chronology_of_Australian_federal_parliaments"
+},
+{
+  "id": "au_lobbying_orgs",
+  "urn_prefix": "urn:lobbyists.ag.gov.au:",
+  "relative_load_priority": 5,
+  "label": "au_gov_lobbyists",
+  "data_location": "/parliament/lobbying-organisations-ag_gov_au2.csv",
+  "data_format": "text/csv",
+  "temporal": true,
+  "schema_ref": "./schemas/Parliament.json",
+  "source" : "https://lobbyists.ag.gov.au/home"
+},
+{
+  "id": "au_lobbying_client_orgs",
+  "urn_prefix": "urn:abr.business.gov.au:",
+  "relative_load_priority": 6,
+  "label": "au_orgs_using_lobbyists",
+  "data_location": "/parliament/lobbying_client_orgs-ag_gov_au.csv",
+  "data_format": "text/csv",
+  "temporal": false,
+  "schema_ref": "./schemas/Organisation.json",
+  "source" : "https://lobbyists.ag.gov.au/home"
+}
+
+]

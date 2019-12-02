@@ -47,3 +47,8 @@ gitsetup.sh
 # References
 
 Github API Reference - https://developer.github.com/v3/repos/#create
+
+[API Specification getting-started-with-json-hyper-schema - JSON Hypermedia](https://apisyouwonthate.com/blog/getting-started-with-json-hyper-schema)
+
+[Swagger Spec](https://docs.swagger.io/spec.html#434-items-object)
+[Swagger Editor](https://editor.swagger.io/)

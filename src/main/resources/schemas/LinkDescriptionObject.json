@@ -1,4 +1,4 @@
-  LinkDescriptionObject:
+LinkDescriptionObject:
    type: object
    description: A Hypermedia link description object
    properties:
